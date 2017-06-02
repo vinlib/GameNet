@@ -1,7 +1,5 @@
 ## Welcome to GameNet
 
-You can use the [editor on GitHub](https://github.com/vinlib/GameNet/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
 GameNet is a cross-platform game networking library written to work on Raspberry Pi. You can also use this library in any platform with Python installed.
 
 GameNet uses UDP based Socket connections for communication.
