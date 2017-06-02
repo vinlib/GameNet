@@ -6,7 +6,7 @@ GameNet uses UDP based Socket connections for communication.
 
 Supports the following features,
 * Connection Management
-* Mutiplayer support
+* Multiplayer support
 * Score Management
 
 ### Starting the server
