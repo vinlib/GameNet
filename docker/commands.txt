@@ -1,0 +1,2 @@
+# docker build -t gamenet .
+# docker run -d -p 44663:44663/udp -t gamenet
