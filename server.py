@@ -19,7 +19,7 @@ def broadcast(data,addr):
             if k != str(addr):
                 sock.sendto(data,v)
                 counterMessagesSent +=1
-                print "Broadcasted  position to network"+str(v)
+                print "Broadcasted  position/score to network"+str(v)
 
 def reply(data,addr):
       global counterMessagesSent
@@ -75,6 +75,10 @@ while True:
           PLAYER_SCORE[str(addr)] = score+coinPoints
           scorestr = "score,"+str(PLAYER_SCORE[str(addr)])
           reply(scorestr,addr)
+      if command[0] == 'ReduceScore':
+          print "Reduce Score request received"
+          redscore = "reducescore,"+str(addr)
+          broadcast(redscore,addr)
       print "Connected players list", CONNECTED_PLAYERS
       print "Connected players score", PLAYER_SCORE
       print "Available player", AVAILABLE_PLAYER_IDS
